@@ -17,7 +17,6 @@ public class QuickSort {
         randomizedQuickSort(arr, 0, arr.length-1);
         System.out.println(Arrays.toString(arr));
 
-
     }
 
     private static void randomizedQuickSort(int[] arr, int l, int r) {
