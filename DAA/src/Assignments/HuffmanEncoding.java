@@ -38,7 +38,6 @@ public class HuffmanEncoding {
         for (int i = 0; i < chars.length; i++)
             minHeap.add(new HuffmanNode(freqs[i], chars[i]));
 
-
         huffmanEncoding(minHeap);
     }
 

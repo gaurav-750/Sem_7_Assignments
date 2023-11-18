@@ -1,13 +1,22 @@
 package Assignments;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
+
 //Write a program non-recursive and recursive program to calculate Fibonacci numbers and
 //analyze their time and space complexity.
 public class Fibo {
     public static void main(String[] args) {
 
-        int n = 5;
-        System.out.println("Recursive: " + recursiveFibo(n));
-        System.out.println("Iterative: " + iterativeFibo(n));
+        Scanner sc = new Scanner(System.in);
+        try {
+            int n = sc.nextInt();
+
+            System.out.println("Recursive: " + recursiveFibo(n));
+            System.out.println("Iterative: " + iterativeFibo(n));
+        }catch (InputMismatchException e){
+            System.out.println("Invalid Input! Please enter a number.");
+        }
 
     }
 
